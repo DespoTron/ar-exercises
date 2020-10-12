@@ -16,3 +16,10 @@ puts "Enter a store name:"
 
 puts Store.create(name: @storename).errors.full_messages
 
+@test = Store.create(name: "Tester",
+             annual_revenue: 224000,
+             mens_apparel: false,
+             womens_apparel: false
+)
+
+puts @test.apparel
